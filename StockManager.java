@@ -45,9 +45,9 @@ public class StockManager
      *         with a matching ID.
      */
     public Product findProduct(int id)
-    {
-        return null;
-    }
+   {
+       return null;
+   }
     
     /**
      * Locate a product with the given ID, and return how
@@ -66,5 +66,9 @@ public class StockManager
      */
     public void printProductDetails()
     {
+        for(Product product: stock)
+        {
+        System.out.println(product.toString());
+    }
     }
 }
